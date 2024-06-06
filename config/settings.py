@@ -34,25 +34,6 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'True'
 
-ALLOWED_HOSTS = [
-    'http://127.0.0.1:8000',
-    '127.0.0.1',
-    'port-0-drf-server-ss7z32klx2z1kty.sel5.cloudtype.app',
-]
-# CORS 설정
-CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:8000",
-    'https://port-0-drf-server-ss7z32klx2z1kty.sel5.cloudtype.app',
-]
-# CSRF 설정
-CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:8000",
-    'https://port-0-drf-server-ss7z32klx2z1kty.sel5.cloudtype.app',
-]
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -97,15 +78,18 @@ MIDDLEWARE = [
 ALLOWED_HOSTS = [
     'http://127.0.0.1:8000',
     '127.0.0.1',
+    'port-0-drf-server-ss7z32klx2z1kty.sel5.cloudtype.app',
 ]
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ORIGINS = [
     'http://localhost:3000',
     'http://127.0.0.1:8000',
+    'https://port-0-drf-server-ss7z32klx2z1kty.sel5.cloudtype.app',
 ]
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:3000',
     'http://127.0.0.1:8000',
+    'https://port-0-drf-server-ss7z32klx2z1kty.sel5.cloudtype.app',
 ]
 
 STATIC_URL = '/static/'
